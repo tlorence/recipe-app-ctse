@@ -24,7 +24,7 @@ public class DietController {
     public List<Diet> getAllDiets(){
         return dietService.getAllDiets();
     }
-    @GetMapping("/findConferenceById/{id}")
+    @GetMapping("/findDietById/{id}")
     public Optional<Diet> getById(@PathVariable String id){
         return dietService.getDietReferenceById(id);
     }
