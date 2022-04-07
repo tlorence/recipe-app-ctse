@@ -7,27 +7,46 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class BeverageRecipe {
 
     @Id
-    private String recipeId;
-    private String description;
+    private String id;
+    private String beverageName;
+    private String ingredients;
 
-    public BeverageRecipe(String recipeId, String description) {
-        this.recipeId = recipeId;
-        this.description = description;
+    public BeverageRecipe(String id, String beverageName,String ingredients) {
+        this.id = id;
+        this.beverageName = beverageName;
+        this.ingredients = ingredients;
     }
 
-    public String getRecipeId() {
-        return recipeId;
+    public String getId() {
+        return id;
     }
 
-    public void setRecipeId(String recipeId) {
-        this.recipeId = recipeId;
+    public void setId(String id) {
+        this.id = id;
     }
 
-    public String getDescription() {
-        return description;
+    public String getBeverageName() {
+        return beverageName;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setBeverageName(String beverageName) {
+        this.beverageName = beverageName;
+    }
+
+    public String getIngredients() {
+        return ingredients;
+    }
+
+    public void setIngredients(String ingredients) {
+        this.ingredients = ingredients;
+    }
+
+    @Override
+    public String toString() {
+        return "BeverageRecipe{" +
+                "recipeId='" + id + '\'' +
+                ", beverageName='" + beverageName + '\'' +
+                ", ingredients='" + ingredients + '\'' +
+                '}';
     }
 }
