@@ -12,7 +12,7 @@ public class BeverageRecipe {
     private String description;
     private String ingredients;
 
-    public BeverageRecipe(Long id, String name, String description, String ingredients, String imageLinks) {
+    public BeverageRecipe(Long id, String name, String description, String ingredients) {
 
         this.id = id;
         this.name = name;
@@ -51,5 +51,5 @@ public class BeverageRecipe {
     public void setIngredients(String ingredients) {
         this.ingredients = ingredients;
     }
-    
+
 }
