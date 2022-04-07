@@ -9,12 +9,18 @@ public class Diet {
     @Id
     private String dietId;
     private int age;
-    private String description;
+    private float weight;
+    private String breakfast;
+    private String lunch;
+    private String dinner;
 
-    public Diet(String dietId, int age, String description) {
+    public Diet(String dietId, int age, float weight, String breakfast, String lunch, String dinner) {
         this.dietId = dietId;
         this.age = age;
-        this.description = description;
+        this.weight = weight;
+        this.breakfast = breakfast;
+        this.lunch = lunch;
+        this.dinner = dinner;
     }
 
     public String getDietId() {
@@ -33,11 +39,35 @@ public class Diet {
         this.age = age;
     }
 
-    public String getDescription() {
-        return description;
+    public float getWeight() {
+        return weight;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setWeight(float weight) {
+        this.weight = weight;
+    }
+
+    public String getBreakfast() {
+        return breakfast;
+    }
+
+    public void setBreakfast(String breakfast) {
+        this.breakfast = breakfast;
+    }
+
+    public String getLunch() {
+        return lunch;
+    }
+
+    public void setLunch(String lunch) {
+        this.lunch = lunch;
+    }
+
+    public String getDinner() {
+        return dinner;
+    }
+
+    public void setDinner(String dinner) {
+        this.dinner = dinner;
     }
 }

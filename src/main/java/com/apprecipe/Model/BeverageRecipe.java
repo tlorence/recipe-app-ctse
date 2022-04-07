@@ -7,30 +7,43 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class BeverageRecipe {
 
     @Id
-    private String id;
-    private String beverageName;
+    private Long id;
+    private String name;
+    private String description;
     private String ingredients;
+    private String imageLinks;
 
-    public BeverageRecipe(String id, String beverageName,String ingredients) {
+    public BeverageRecipe(Long id, String name, String description, String ingredients, String imageLinks) {
+
         this.id = id;
-        this.beverageName = beverageName;
+        this.name = name;
+        this.description = description;
         this.ingredients = ingredients;
+        this.imageLinks = imageLinks;
     }
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public String getBeverageName() {
-        return beverageName;
+    public String getName() {
+        return name;
     }
 
-    public void setBeverageName(String beverageName) {
-        this.beverageName = beverageName;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public String getIngredients() {
@@ -41,12 +54,11 @@ public class BeverageRecipe {
         this.ingredients = ingredients;
     }
 
-    @Override
-    public String toString() {
-        return "BeverageRecipe{" +
-                "recipeId='" + id + '\'' +
-                ", beverageName='" + beverageName + '\'' +
-                ", ingredients='" + ingredients + '\'' +
-                '}';
+    public String getImageLinks() {
+        return imageLinks;
+    }
+
+    public void setImageLinks(String imageLinks) {
+        this.imageLinks = imageLinks;
     }
 }
