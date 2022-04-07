@@ -7,12 +7,12 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class BeverageRecipe {
 
     @Id
-    private Long id;
+    private String id;
     private String name;
     private String description;
     private String ingredients;
 
-    public BeverageRecipe(Long id, String name, String description, String ingredients) {
+    public BeverageRecipe(String id, String name, String description, String ingredients) {
 
         this.id = id;
         this.name = name;
@@ -20,11 +20,11 @@ public class BeverageRecipe {
         this.ingredients = ingredients;
     }
 
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
