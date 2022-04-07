@@ -10,12 +10,12 @@ public class Diet {
     private String dietId;
     private String name;
     private String age;
-    private float weight;
+    private String weight;
     private String breakfast;
     private String lunch;
     private String dinner;
 
-    public Diet(String dietId, String name, String age, float weight, String breakfast, String lunch, String dinner) {
+    public Diet(String dietId, String name, String age, String weight, String breakfast, String lunch, String dinner) {
         this.dietId = dietId;
         this.name = name;
         this.age = age;
@@ -49,11 +49,11 @@ public class Diet {
         this.age = age;
     }
 
-    public float getWeight() {
+    public String getWeight() {
         return weight;
     }
 
-    public void setWeight(float weight) {
+    public void setWeight(String weight) {
         this.weight = weight;
     }
 
