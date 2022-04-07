@@ -8,14 +8,16 @@ public class Diet {
 
     @Id
     private String dietId;
+    private String name;
     private int age;
     private float weight;
     private String breakfast;
     private String lunch;
     private String dinner;
 
-    public Diet(String dietId, int age, float weight, String breakfast, String lunch, String dinner) {
+    public Diet(String dietId, String name, int age, float weight, String breakfast, String lunch, String dinner) {
         this.dietId = dietId;
+        this.name = name;
         this.age = age;
         this.weight = weight;
         this.breakfast = breakfast;
@@ -29,6 +31,14 @@ public class Diet {
 
     public void setDietId(String dietId) {
         this.dietId = dietId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getAge() {
