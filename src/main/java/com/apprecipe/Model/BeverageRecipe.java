@@ -11,7 +11,6 @@ public class BeverageRecipe {
     private String name;
     private String description;
     private String ingredients;
-    private String imageLinks;
 
     public BeverageRecipe(Long id, String name, String description, String ingredients, String imageLinks) {
 
@@ -19,7 +18,6 @@ public class BeverageRecipe {
         this.name = name;
         this.description = description;
         this.ingredients = ingredients;
-        this.imageLinks = imageLinks;
     }
 
     public Long getId() {
@@ -53,12 +51,5 @@ public class BeverageRecipe {
     public void setIngredients(String ingredients) {
         this.ingredients = ingredients;
     }
-
-    public String getImageLinks() {
-        return imageLinks;
-    }
-
-    public void setImageLinks(String imageLinks) {
-        this.imageLinks = imageLinks;
-    }
+    
 }
