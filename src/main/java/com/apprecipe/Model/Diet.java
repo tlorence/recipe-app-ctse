@@ -6,6 +6,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "diets")
 public class Diet {
 
+    @Id
     private String id;
     private String name;
     private String age;
