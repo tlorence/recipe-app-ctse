@@ -6,8 +6,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "diets")
 public class Diet {
 
-    @Id
-    private String dietId;
+    private String id;
     private String name;
     private String age;
     private String weight;
@@ -16,7 +15,7 @@ public class Diet {
     private String dinner;
 
     public Diet(String dietId, String name, String age, String weight, String breakfast, String lunch, String dinner) {
-        this.dietId = dietId;
+        this.id = dietId;
         this.name = name;
         this.age = age;
         this.weight = weight;
@@ -25,12 +24,12 @@ public class Diet {
         this.dinner = dinner;
     }
 
-    public String getDietId() {
-        return dietId;
+    public String getId() {
+        return id;
     }
 
-    public void setDietId(String dietId) {
-        this.dietId = dietId;
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getName() {
