@@ -11,8 +11,8 @@ public class KitchenTips {
     private String name;
     private String description;
 
-    public KitchenTips(String tipNo, String name, String description) {
-        this.id = tipNo;
+    public KitchenTips(String id, String name, String description) {
+        this.id = id;
         this.name = name;
         this.description = description;
     }

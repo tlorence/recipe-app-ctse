@@ -15,8 +15,8 @@ public class Diet {
     private String lunch;
     private String dinner;
 
-    public Diet(String dietId, String name, String age, String weight, String breakfast, String lunch, String dinner) {
-        this.id = dietId;
+    public Diet(String id, String name, String age, String weight, String breakfast, String lunch, String dinner) {
+        this.id = id;
         this.name = name;
         this.age = age;
         this.weight = weight;
